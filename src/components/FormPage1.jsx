@@ -110,7 +110,39 @@ export default function FormPage1({ onNext }) {
   };
 
   return (
-    <div className="p-4 max-w-xl mx-auto space-y-4">
+    <div className="p-4 max-w-xl mx-auto space-y-6">
+      {/* ✅ Instructions Section */}
+      <div className="bg-gray-100 p-4 rounded-lg shadow-sm">
+        <h1 className="text-2xl font-bold mb-2">DPS Bangalore North</h1>
+        <h2 className="text-lg font-semibold mb-2">
+          Registration Instructions - BIZONOMY 2025
+        </h2>
+        <p className="mb-2">
+          Welcome to BIZONOMY 2025! Please carefully read the following instructions before proceeding with your registration:
+        </p>
+        <ul className="list-disc list-inside space-y-1 text-sm md:text-base">
+          <li>
+            <strong>One Event per Participant:</strong> Each participant is allowed to compete in only one event. Kindly ensure no participant is registered for multiple events.
+          </li>
+          <li>
+            <strong>Eligibility Criteria:</strong> Open to students from Grades 9 to 12, only for students from the commerce stream.
+          </li>
+          <li>
+            <strong>Participation Fee:</strong> ₹350/- per participant (non-refundable)
+          </li>
+          <li>
+            <strong>Registration Deadline:</strong> All entries must be submitted by Friday, 15th August 2025.
+          </li>
+          <li>
+            <strong>Limited Team Slots:</strong> Please note that each event has a capped number of team slots. If the maximum limit is reached, your Institution's registration for that specific event may not be accommodated, even if the form has been submitted.
+          </li>
+        </ul>
+        <p className="mt-2">
+          Thank you for your cooperation. We look forward to your enthusiastic participation in BIZONOMY 2025!
+        </p>
+      </div>
+
+      {/* ✅ Original Form */}
       <h1 className="text-2xl font-bold">Institutional Registration</h1>
 
       <div>
