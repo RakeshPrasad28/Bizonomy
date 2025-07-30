@@ -13,6 +13,7 @@ const gamesList = [
   "Econopoly",
   "Bizonomy Digest",
   "Mission: Crisis Control",
+  "Corporate crime files",
   "Business Idea Generator",
 ];
 
@@ -111,7 +112,7 @@ export default function FormPage1({ onNext }) {
 
   return (
     <div className="p-4 max-w-xl mx-auto space-y-6">
-      {/* ✅ Instructions Section */}
+      {/* Instructions Section */}
       <div className="bg-gray-100 p-4 rounded-lg shadow-sm">
         <h1 className="text-2xl font-bold mb-2">DPS Bangalore North</h1>
         <h2 className="text-lg font-semibold mb-2">
@@ -142,7 +143,7 @@ export default function FormPage1({ onNext }) {
         </p>
       </div>
 
-      {/* ✅ Original Form */}
+      {/* Original Form */}
       <h1 className="text-2xl font-bold">Institutional Registration</h1>
 
       <div>

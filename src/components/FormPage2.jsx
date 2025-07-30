@@ -9,7 +9,6 @@ export default function FormPage2({ onBack, onNext }) {
   const dispatch = useDispatch();
   const [formData, setFormData] = useState({});
 
-  // ✅ Custom participants per game
   const gameParticipants = {
     "Guesstimate": 4,
     "Undercover Intern": 5,
@@ -28,7 +27,7 @@ export default function FormPage2({ onBack, onNext }) {
   useEffect(() => {
     const init = {};
     selectedGames.forEach((game) => {
-      const teamSize = gameParticipants[game] || 4; // fallback to 4
+      const teamSize = gameParticipants[game] || 4; 
       const gameData = gamesDetails[game] || [];
       init[game] = {};
       for (let i = 0; i < teamSize; i++) {
@@ -55,7 +54,6 @@ export default function FormPage2({ onBack, onNext }) {
 
   const handleSave = () => {
   for (const [game, details] of Object.entries(formData)) {
-    // Count filled students
     const filledCount = Object.values(details).filter(
       (student) => student.name.trim() && student.class.trim()
     ).length;
